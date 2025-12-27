@@ -1,0 +1,391 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #070807ea;
+    color: white;
+    /* text-align: center; */
+    padding: 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#hero img {
+    display: inline;
+    margin: 20px 0 20px 100px;
+    animation-name: bounceIn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+
+
+}
+
+#hero button {
+    padding: 15px 30px;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#hero button a {
+    color: #020202;
+    text-decoration: none;
+
+}
+
+#hero button:hover {
+    background-color: #707770;
+    color: white;
+}
+
+/* Images */
+.hero-img,
+.about-img,
+.service-img .logo_img .service-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 100px 50px;
+    background-color: #f9f9f9;
+
+    display: flex;
+
+
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin-bottom: 20px;
+
+
+
+}
+
+#about img {
+    display: inline;
+    animation-name: bounceIn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    margin-left: 150px;
+}
+
+/* logo */
+#logo {
+    color: white;
+    padding: 100px 50px;
+    background-color: #0c0b0b;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+}
+
+#logo img {
+
+    animation-name: bounceIn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#logo .block {
+    padding-left: 120px;
+    font-size: 1em;
+    margin-bottom: 2em;
+
+}
+
+#logo .block button {
+    padding: 15px 30px;
+    background-color: white;
+    color: #0a0c0a;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#logo .block button a {
+    color: #020202;
+    text-decoration: none;
+
+}
+
+#logo .block button:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+#services h2 h5 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    display: inline;
+    width: 90%;
+    height: 40%;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+}
+
+.service-card .img {
+    width: 80%;
+    /* z-index: 1; */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 100px;
+    text-align: center;
+    background-color: #050505;
+    color: white;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 50%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact form button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px;
+    background-color: #333;
+    color: white;
+}
+
+/* ----- Media Queries ----- */
+
+/* For screens smaller than 768px (Tablets & Small Desktops) */
+@media (max-width: 768px) {
+
+    /* Make navigation items stack vertically */
+    nav ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Hero Section */
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1.1em;
+    }
+
+    /* //////////////logo */
+    /* Hero Section */
+    #logo h1 {
+        font-size: 2.5em;
+    }
+
+    #logo p {
+        font-size: 1.1em;
+    }
+
+    /* Service Cards - Stack them */
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact form */
+    #contact form input,
+    #contact form textarea {
+        width: 100%;
+    }
+
+}
+
+/* For screens smaller than 480px (Mobile Phones) */
+@media (max-width: 480px) {
+
+    /* Hero Section */
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #hero button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+
+    /* logo section */
+
+    #logo h1 {
+        font-size: 2em;
+    }
+
+    #logo p {
+        font-size: 1em;
+    }
+
+    #logo img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+
+
+
+
+
+
+
+    /* About Section */
+    #about h2 {
+        font-size: 2em;
+    }
+
+    /* Services Section */
+    #services h2 {
+        font-size: 2em;
+    }
+
+    .service-card h3 {
+        font-size: 1.5em;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8em;
+    }
+}
